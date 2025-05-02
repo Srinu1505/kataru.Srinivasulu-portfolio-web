@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+  
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+    <nav id="nav1">
+      <ul id="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Hi, I'm Srinu</h1>
+    <h2>Web Developer</h2>
+    <img src="Srinu1.jpg" alt="Srinu" />
+  </section>
+
+    <section id="about" style="background-color: silver;">
+        <h2>About Me</h2>
+        <img src="about.jpg" alt="about">
+        <p style="font-weight: 900;">
+            I'm a passionate and detail-oriented web developer with hands-on experience in front-end and back-end
+            development.
+            I completed my BSc in Computers in 2024 and have strong skills in HTML, CSS, Bootstrap, JavaScript, React,
+            and Node.js.
+        </p>
+
+        <nav>
+            <ul>
+                <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#education" onclick="showSection('education')">Education</a></li>
+            </ul>
+        </nav>
+
+        <div id="skills" class="info-box">
+            <h3 style="color: black;">My Skills</h3>
+            <ul>
+                <li style="color: tomato;"><h1>Web Development</h1></li>
+                <li><h3>Designing Web Interface</h3></li>
+                <li style="color: tomato;"><h1>Languages Known</h1></li>
+                <li><h3>HTML5,BOOTSTRAP,CSS3,JAVASCRIPT,<br>REACT JS, NODE JS</h3></li>
+                <li style="color: tomato;"><h1>Soft Skills</h1></li>
+                <li><h3>Time Management, Problem-Solving, Creativity</h3></li>
+                
+            </ul>
+        </div>
+
+        <div id="education" class="info-box"  >
+            <h3>My Education</h3>
+            <ul>
+                <li style="color: tomato;"><h1>2022-2024</h1></li>
+                <li>BSc Computers-Sri Gowthami Degree Colleage - 70%</li>
+                <li style="color: tomato;"><h1>2019-2021 </h1></li>
+                <li>MPC Intermediate - Bhavana Junior Colleage - 80%</li>
+                <li style="color: tomato;"><h1>2019</h1></li>
+                <li>SSC - Sri Vivekananda High School - 95% </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="services" class="services-section" style="background-color: silver;">
+        <h2>Services</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>I build responsive and interactive websites using HTML, CSS, JavaScript, and React to ensure seamless
+                    user experiences across all devices.</p>
+            </div>
+            <div class="card">
+                <h3>Frontend Development</h3>
+                <p>Crafting visually appealing and performance-optimized frontends with modern frameworks like React JS,
+                    ensuring smooth UI/UX.</p>
+            </div>
+            <div class="card">
+                <h3>Responsive Design</h3>
+                <p>Ensuring your website looks and functions perfectly on all devices—desktops, tablets, and
+                    smartphones.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="certificates-section" style="background-color: silver;">
+        <h2>Certificates</h2>
+        <div class="certificates-container">
+            <div class="certificate-card">
+                <img src="udemy1.jpg" alt="Udemy Certificate">
+            </div>
+            <div class="certificate-card">
+                <img src="skillUp.jpg" alt="SkillUp Certificate">
+            </div>
+            <div class="certificate-card">
+                <img src="udemy2.jpg" alt="SkillUp Certificate">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="contact" class="contact-section" style="background-color: silver;">
+        <!-- Contact Form Card -->
+        
+        <div class="card">
+          <h2>Contact Me</h2>
+          <form id="contactForm">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+    
+        <!-- Info & Social Card -->
+        <div class="card">
+          <h2>Connect with Me</h2>
+    
+          <div class="contact-info">
+            <!-- Email -->
+            <p>
+              <svg width="20" height="20" fill="#333" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4.99-8 5-8-5V6l8 5 8-5v2.99z"/>
+              </svg>
+              <a href="mailto:srinukataru1505@gmail.com">Email</a>
+            </p>
+    
+            <!-- Phone -->
+            <p>
+              <svg width="20" height="20" fill="#333" viewBox="0 0 24 24">
+                <path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.56 3.57.56.55 0 1 .45 1 1V20c0 .55-.45 1-1 1A17.91 17.91 0 0 1 4 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.19 2.45.57 3.57.11.35.03.74-.24 1.02l-2.2 2.2z"/>
+              </svg>
+              <a href="tel:+916303309962">Call</a>
+            </p>
+          </div>
+    
+          <div class="social-links">
+            <!-- GitHub -->
+            <a href="https://github.com/Srinu1505" target="_blank" title="GitHub" class="social-icon">
+              <svg height="30" width="30" fill="#333" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.32c-2.23.49-2.69-1.07-2.69-1.07-.36-.92-.88-1.17-.88-1.17-.72-.49.06-.48.06-.48.8.06 1.22.82 1.22.82.71 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.97 0-.88.31-1.6.82-2.17-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27 7.65 7.65 0 0 1 2 .27c1.52-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.57.82 1.29.82 2.17 0 3.09-1.87 3.77-3.65 3.97.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+            </a>
+    
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/srinu143" target="_blank" title="LinkedIn" class="social-icon">
+              <svg height="30" width="30" fill="#0077b5" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.327-.028-3.036-1.852-3.036-1.853 0-2.136 1.447-2.136 2.941v5.664H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.369-1.85 3.598 0 4.26 2.368 4.26 5.451v6.29zM5.337 7.433c-1.144 0-2.069-.926-2.069-2.069s.925-2.069 2.069-2.069c1.144 0 2.069.925 2.069 2.069s-.925 2.069-2.069 2.069zM6.814 20.452H3.861V9h2.953v11.452zM22.225 0H1.771C.792 0 0 .771 0 1.723v20.554C0 23.229.792 24 1.771 24h20.451C23.207 24 24 23.229 24 22.277V1.723C24 .771 23.207 0 22.225 0z"/>
+              </svg>
+            </a>
+    
+            <!-- Download CV -->
+            <a href="https://drive.google.com/uc?export=download&id=1-7YZV4-hRrACqqRT3mfw2gn9YIjRs3oC" class="download-btn" target="_blank" title="Download CV">
+              <svg height="24" width="24" fill="#fff" viewBox="0 0 24 24" style="margin-right: 8px;">
+                <path d="M5 20h14v-2H5v2zm7-18-5.5 5.5h4v6h3v-6h4L12 2z"/>
+              </svg>
+              Download CV
+            </a>
+          </div>
+        </div>
+      </section>
+      
+
+    <footer>
+        <p>&copy; Srinivasulu</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
